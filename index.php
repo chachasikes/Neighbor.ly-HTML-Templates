@@ -1,7 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html lang="en">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
+<head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <meta content="en-us" http-equiv="Content-Language" />
 <meta content="Neighborly connects you with your closest neighbors." name="description" />
@@ -12,6 +11,13 @@
 <link rel="stylesheet" href="theme/css/960.css" />
 <link rel="stylesheet" href="theme/css/styles.css" />
 <link rel="stylesheet" href="theme/css/forms.css" />
+<!--[if IE]>
+    <link rel="stylesheet" href="theme/css/siteie.css" type="text/css">
+<![endif]-->
+<!--[if IE 6]>
+    <link rel="stylesheet" href="theme/css/siteie6.css" type="text/css">
+<![endif]-->
+
 <?php require_once('includes/neighborly.theme.inc'); ?>
 <script type="text/javascript" src="theme/js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="theme/js/jquery-ui-1.8rc3.custom.min.js"></script>
