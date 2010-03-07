@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="theme/css/reset.css" />
 <link rel="stylesheet" href="theme/css/text.css" />
 <link rel="stylesheet" href="theme/css/960.css" />
+<link rel="stylesheet" href="theme/css/styles.css" />
+<link rel="stylesheet" href="theme/css/forms.css" />
 <?php require_once('includes/neighborly.theme.inc'); ?>
 <script type="text/javascript" src="theme/js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="theme/js/jquery-ui-1.8rc3.custom.min.js"></script>
