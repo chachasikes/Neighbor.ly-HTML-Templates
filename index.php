@@ -11,6 +11,9 @@
 <link rel="stylesheet" href="theme/css/text.css" />
 <link rel="stylesheet" href="theme/css/960.css" />
 <?php require_once('includes/neighborly.theme.inc'); ?>
+<script type="text/javascript" src="theme/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="theme/js/jquery-ui-1.8rc3.custom.min.js"></script>
+
 </head>
 <body>
   <div id="page" class="container_20 page">
@@ -67,5 +70,6 @@
     <div id="closure" class="grid_20 closure alpha omega">&copy; 2010 e-democracy.org</div>
   	<div class="clear"></div>
   </div>
+<script type="text/javascript" src="theme/js/neighborly.js"></script>
 </body>
 </html>
