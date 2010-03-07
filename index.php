@@ -10,14 +10,14 @@
 <link rel="stylesheet" href="theme/css/reset.css" />
 <link rel="stylesheet" href="theme/css/text.css" />
 <link rel="stylesheet" href="theme/css/960.css" />
-<?php include 'includes/neighborly.theme.inc'; ?>
+<?php require_once('includes/neighborly.theme.inc'); ?>
 </head>
 <body>
   <div id="page" class="container_20 page">
     <div id="messages" class="grid_20 messages alpha omega">MESSAGES</div>
     <div id="branding" class="grid_10 branding alpha">
       <div id="logo" class="grid_2 logo alpha">LOGO</div>
-      <div id="title" class="grid_8 title">
+      <div id="title" class="grid_8 title omega">
         <h1><a href="index.html">Neighborly</a></h1>
       </div>
     </div>
@@ -29,30 +29,33 @@
         <li><a href="login">login</a></li>
       </ul>
   	</div>
+    <div id="tiles-top" class="grid_20 alpha omega tiles-top">
+      <?php echo "top" . neighborly_tiles('top'); ?>
+    </div>
     <div id="content" class="grid_20 content alpha omega">
-      <div id="main-content" class="grid_10 main-content prefix_5">
-    	<h2 class="tagline">Project tagline in three to eight words.</h2>
-      <div id="register-address">
-        <form id="address">
-          <label>Enter your address</label>
-          <input value="" />
-          <div class="description">
-            to see your neighborly neighbors
-          </div>
-        </form>
+      <div id="main-content" class="grid_10 main-content push_5">
+      	<h2 class="tagline">Project tagline in three to eight words.</h2>
+        <div id="register-address">
+          <?php echo neighborly_register(); ?>
+        </div>
       </div>
-      </div>
-
-      <div id="sidebar" class="grid_5 sidebar-left alpha">
+      <div id="sidebar" class="grid_4 sidebar-left pull_9">
         SIDEBAR LEFT
       </div>
-
-      <div id="sidebar-right" class="grid_5 sidebar-right push_15 omega">
+      <div id="sidebar-right" class="grid_4 sidebar-right">
         SIDEBAR RIGHT
       </div>
-
+      <div id="tiles-left" class="grid_1 tiles-left pull_18 alpha">
+        <?php echo "left" . neighborly_tiles('left'); ?>
+      </div>
+      <div id="tiles-right" class="grid_1 tiles-left omega">
+        <?php echo "right" . neighborly_tiles('right'); ?>
+      </div>
     </div>
-  	<div class="clear"></div>  
+  	<div class="clear"></div>
+    <div id="tiles-bottom" class="grid_20 alpha omega tiles-bottom">
+      <?php echo "bottom" . neighborly_tiles('bottom'); ?>
+    </div>
     <div id="footer" class="grid_20 footer alpha omega">
       <ul class="menu">
         <li><a href="besafe">Be safe</a></li>
