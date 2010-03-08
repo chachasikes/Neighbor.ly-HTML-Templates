@@ -1,0 +1,36 @@
+body {
+  color: #000000;
+  font-size: 14px;
+  line-height: 1.5em;
+  font-family: sans-serif;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+h1{
+  font-size: 2.0em;
+}
+h2{
+  font-size: 1.5em;
+}
+h3{
+  font-size: 1.2em;
+}
+h4{
+  font-size: 1em;
+}
+h5{
+  font-size: 1em;
+}
+h6{
+  font-size: 1em;
+}
+body, p, .content {
+
+}
+h1, h2, h3 {
+  font-family: Georgia, serif;
+}

@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="theme/css/text.css" />
 <link rel="stylesheet" href="theme/css/960.css" />
 <link rel="stylesheet" href="theme/css/styles.css" />
+<link rel="stylesheet" href="theme/css/typography.css" />
 <link rel="stylesheet" href="theme/css/forms.css" />
 <!--[if IE]>
     <link rel="stylesheet" href="theme/css/siteie.css" type="text/css">
@@ -41,27 +42,26 @@
         </div>
       	<div class="clear"></div>
         <div id="page-header" class="page-header grid_20">
-            <div id="branding" class="grid_5 branding alpha">
-              <div class="content">
-                LOGO
-              </div>
+          <div id="branding" class="grid_5 branding alpha">
+            <div class="content">
+              LOGO
             </div>
-            <div id="title" class="grid_5 title">
-              <div class="content">
-                <h1><a href="index.html">Neighborly</a></h1>
-              </div>
+          </div>
+          <div id="title" class="grid_5 title">
+            <div class="content">
+              <h1><a href="index.html">Neighborly</a></h1>
             </div>
-            <div id="primary-nav" class="grid_10 primary-nav omega">
-              <div class="content">
-                <ul class="menu">
-                  <li><a href="learn">learn</a></li>
-                  <li><a href="about">about</a></li>
-                  <li><a href="signup">signup</a></li>
-                  <li><a href="login">login</a></li>
-                </ul>
+          </div>
+          <div id="primary-nav" class="grid_10 primary-nav omega">
+            <div class="content">
+              <ul class="menu">
+                <li><a href="learn">learn</a></li>
+                <li><a href="about">about</a></li>
+                <li><a href="signup">signup</a></li>
+                <li><a href="login">login</a></li>
+              </ul>
             </div>
-        	</div>
-          <div class="clear"></div>
+          </div>
         </div>
     	</div>
       <div class="clear"></div>
@@ -77,28 +77,29 @@
         <div id="secondary-nav" class="grid_5 sidebar sidebar-left pull_15">
           SIDEBAR LEFT
         </div>
-      </div>
-      <div class="clear"></div>
-      <div id="tiles-bottom" class="grid_20 tiles tiles-bottom">
-        <?php echo neighborly_tiles('bottom'); ?>
-      </div>
-      <div class="clear"></div>
-      <div id="footer" class="grid_20 footer">
-        <div class="content">
-          <ul class="menu">
-            <li><a href="besafe">Be safe</a></li>
-            <li><a href="contact">Contact</a></li>
-            <li><a href="get-involved">Get involved</a></li>
-          </ul>
+        <div class="clear"></div>
+        <div id="tiles-bottom" class="grid_20 tiles tiles-bottom">
+          <?php echo neighborly_tiles('bottom'); ?>
         </div>
-      </div>
-    	<div class="clear"></div>
-      <div id="closure" class="grid_20 closure">
-        <div class="content">
-          &copy; 2010 e-democracy.org
+        <div class="clear"></div>
+        <div id="footer" class="grid_20 footer">
+          <div class="content">
+            <ul class="menu">
+              <li><a href="besafe">Be safe</a></li>
+              <li><a href="contact">Contact</a></li>
+              <li><a href="get-involved">Get involved</a></li>
+            </ul>
+          </div>
         </div>
+      	<div class="clear"></div>
+        <div id="closure" class="grid_20 closure">
+          <div class="content">
+            &copy; 2010 e-democracy.org
+          </div>
+        </div>
+        <div class="clear"></div>
       </div>
-    	<div class="clear"></div>
+    </div>
   </div>
 <script type="text/javascript" src="theme/js/neighborly.js"></script>
 </body>

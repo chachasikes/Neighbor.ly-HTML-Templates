@@ -21,7 +21,7 @@ function neighborly_register() {
   global $tagline;
   $output = '<h2 class="tagline">' . $tagline . '</h2>';
   $output .= '
-    <div id="register-address">
+    <div id="register-address" class="form-container">
       <form id="address">
         <label>Enter your address</label>
         <input value="" />
