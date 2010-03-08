@@ -61,9 +61,11 @@ ul.menu li{
 .main-content {
 
 }
+/* @group Sidebars */
 .sidebar {
 
 }
+/* @group Page Navigation */
 #secondary-nav {
 
 }
@@ -77,8 +79,6 @@ ul.menu li{
 }
 /* @group tiles */
 .tiles img{
-  width: 95px;
-  height: 95px;
 }
 .tiles-top,
 tiles-bottom {

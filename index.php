@@ -83,7 +83,7 @@
         </div>
         <div class="clear"></div>
         <div id="footer" class="grid_20 footer">
-          <div class="content">
+          <div class="content grid_18 push_1 alpha omega">
             <ul class="menu">
               <li><a href="besafe">Be safe</a></li>
               <li><a href="contact">Contact</a></li>
@@ -93,7 +93,7 @@
         </div>
       	<div class="clear"></div>
         <div id="closure" class="grid_20 closure">
-          <div class="content">
+          <div class="content grid_18 push_1 alpha omega">
             &copy; 2010 e-democracy.org
           </div>
         </div>
