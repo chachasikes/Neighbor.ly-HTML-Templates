@@ -4,3 +4,74 @@
  * All font, links and other typography should be placed in the typography file.
  * This site uses the 960 grid system.
  */
+
+/* @group Custom resets */
+
+ul.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#primary-nav ul.menu {
+  float: right;
+}
+#primary-nav ul.menu li{
+  float: left;
+}
+
+/* @group Page regions */
+.page {
+  background-color: navy;
+  width: 950px;
+}
+.page-header {
+
+}
+.page-content {
+  background-color: fuchsia;
+}
+.content {
+  background-color: white;
+}
+.main-content {
+  background-color: grey;
+}
+.messages {
+  background-color: red;
+}
+
+.branding {
+  background-color: aqua;
+  
+}
+
+.primary-nav {
+  background-color: green;
+}
+
+.logo {
+  background-color: maroon;
+  
+}
+
+.title {
+  background-color: blue;
+}
+
+.sidebar {
+  background-color: purple;
+  
+}
+
+#secondary-nav
+
+/* @group tiles */
+.tiles img{
+  width: 96px;
+  height: 96px;
+}
+.tiles-top,
+tiles-bottom {
+  height: 95px; 
+  overflow: hidden;
+}
