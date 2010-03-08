@@ -22,16 +22,19 @@ ul.menu {
 /* @group Page regions */
 .page {
   background-color: navy;
-  width: 950px;
+}
+.page-top {
+  background-color: fuchsia;
+}
+.page-content {
+
 }
 .page-header {
 
 }
-.page-content {
-  background-color: fuchsia;
-}
+
 .content {
-  background-color: white;
+/*   background-color: white; */
 }
 .main-content {
   background-color: grey;
@@ -63,15 +66,22 @@ ul.menu {
   
 }
 
-#secondary-nav
+#secondary-nav {
+
+}
 
 /* @group tiles */
 .tiles img{
-  width: 96px;
-  height: 96px;
+  width: 95px;
+  height: 95px;
 }
 .tiles-top,
 tiles-bottom {
   height: 95px; 
   overflow: hidden;
+}
+
+/* @accessibility */
+.skiplinks {
+  display: none;
 }

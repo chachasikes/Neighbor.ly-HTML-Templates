@@ -22,19 +22,25 @@
 
 </head>
 <body>
+  <div class="skiplinks">
+  <strong>Welcome to Neighborly.</strong>
+  Skip directly to:
+  <a href="#primary-nav">Section Navigation</a>,
+  <a href="#page-main">Content</a>.
+  </div>
   <div id="page" class="container_20 page">
-    <div id="tiles-top" class="grid_20 alpha omega tiles tiles-top">
+    <div id="tiles-top" class="grid_20 tiles tiles-top">
       <?php echo neighborly_tiles('top'); ?>
     </div>
-    <div id="page-content" class="grid_20 page-content alpha omega">
-      <div id="page-top" class="grid_20 main-content alpha omega">
+    <div id="page-content" class="page-content">
+      <div id="page-top" class="page-top">
         <div id="messages" class="grid_20 messages">
           <div class="content">
           MESSAGES
           </div>
         </div>
       	<div class="clear"></div>
-        <div id="page-header" class="grid_20 main-content">
+        <div id="page-header" class="page-header grid_20">
             <div id="branding" class="grid_5 branding alpha">
               <div class="content">
                 LOGO
@@ -59,38 +65,40 @@
         </div>
     	</div>
       <div class="clear"></div>
-      <div id="main-content" class="grid_10 main-content push_5">
-        <div class="content">
-        <?php echo neighborly_register(); ?>
+      <div id="page-main" class="page-main">
+        <div id="main-content" class="grid_10 main-content push_5">
+          <div class="content">
+          <?php echo neighborly_register(); ?>
+          </div>
+        </div>
+        <div id="sidebar-content" class="grid_5 sidebar sidebar-right push_5">
+          SIDEBAR RIGHT
+        </div>
+        <div id="secondary-nav" class="grid_5 sidebar sidebar-left pull_15">
+          SIDEBAR LEFT
         </div>
       </div>
-      <div id="sidebar-content" class="grid_5 sidebar sidebar-left pull_10 alpha">
-        SIDEBAR LEFT
+      <div class="clear"></div>
+      <div id="tiles-bottom" class="grid_20 tiles tiles-bottom">
+        <?php echo neighborly_tiles('bottom'); ?>
       </div>
-      <div id="secondary-nav" class="grid_5 sidebar sidebar-right omega">
-        SIDEBAR RIGHT
+      <div class="clear"></div>
+      <div id="footer" class="grid_20 footer">
+        <div class="content">
+          <ul class="menu">
+            <li><a href="besafe">Be safe</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="get-involved">Get involved</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  	<div class="clear"></div>
-    <div id="tiles-bottom" class="grid_20 alpha omega tiles tiles-bottom">
-      <?php echo neighborly_tiles('bottom'); ?>
-    </div>
-    <div id="footer" class="grid_20 footer alpha omega">
-      <div class="content">
-        <ul class="menu">
-          <li><a href="besafe">Be safe</a></li>
-          <li><a href="contact">Contact</a></li>
-          <li><a href="get-involved">Get involved</a></li>
-        </ul>
+    	<div class="clear"></div>
+      <div id="closure" class="grid_20 closure">
+        <div class="content">
+          &copy; 2010 e-democracy.org
+        </div>
       </div>
-    </div>
-  	<div class="clear"></div>
-    <div id="closure" class="grid_20 closure alpha omega">
-      <div class="content">
-        &copy; 2010 e-democracy.org
-      </div>
-    </div>
-  	<div class="clear"></div>
+    	<div class="clear"></div>
   </div>
 <script type="text/javascript" src="theme/js/neighborly.js"></script>
 </body>
