@@ -34,3 +34,11 @@ body, p, .content {
 h1, h2, h3 {
   font-family: Georgia, serif;
 }
+
+/* @group Custom Styles */
+.messages a {
+  font-weight: normal;
+  font-size: 0.8em;
+  padding: 10px;
+  float: right;
+}

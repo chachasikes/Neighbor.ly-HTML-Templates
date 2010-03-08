@@ -6,12 +6,13 @@
 <meta content="en-us" http-equiv="Content-Language" />
 <meta content="Neighborly connects you with your closest neighbors." name="description" />
 <title><?php echo $sitename; ?></title>
-<link rel="stylesheet" href="theme/css/reset.css" />
-<link rel="stylesheet" href="theme/css/text.css" />
-<link rel="stylesheet" href="theme/css/960.css" />
-<link rel="stylesheet" href="theme/css/styles.css" />
-<link rel="stylesheet" href="theme/css/typography.css" />
-<link rel="stylesheet" href="theme/css/forms.css" />
+<link rel="stylesheet" media="print" href="theme/css/print.css" />
+<link rel="stylesheet" media="all" href="theme/css/reset.css" />
+<link rel="stylesheet" media="all" href="theme/css/text.css" />
+<link rel="stylesheet" media="all" href="theme/css/960.css" />
+<link rel="stylesheet" media="all" href="theme/css/forms.css" />
+<link rel="stylesheet" media="all" href="theme/css/styles.css" />
+<link rel="stylesheet" media="all" href="theme/css/typography.css" />
 <!--[if IE]>
     <link rel="stylesheet" href="theme/css/siteie.css" type="text/css">
 <![endif]-->
@@ -37,14 +38,14 @@
       <div id="page-top" class="page-top">
         <div id="messages" class="grid_20 messages">
           <div class="content">
-          MESSAGES
+            <a href="">development version</a>
           </div>
         </div>
       	<div class="clear"></div>
         <div id="page-header" class="page-header grid_20">
           <div id="branding" class="grid_5 branding alpha">
             <div class="content">
-              LOGO
+              <!-- <img src="theme/images/logo.png" alt="Neighborly Logo" /> -->
             </div>
           </div>
           <div id="title" class="grid_5 title">
@@ -72,12 +73,18 @@
           </div>
         </div>
         <div id="sidebar-content" class="grid_5 sidebar sidebar-right push_5">
-          SIDEBAR RIGHT
+        <!--   SIDEBAR RIGHT -->
         </div>
         <div id="secondary-nav" class="grid_5 sidebar sidebar-left pull_15">
-          SIDEBAR LEFT
+         <!--  SIDEBAR LEFT -->
         </div>
         <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <div id="page-footer" class="page-footer">
+    <div id="footer-container" class="footer-container container_20">
+      <div id="footer-content" class="footer-content grid_20 alpha omega">
         <div id="tiles-bottom" class="grid_20 tiles tiles-bottom">
           <?php echo neighborly_tiles('bottom'); ?>
         </div>
@@ -101,6 +108,7 @@
       </div>
     </div>
   </div>
+  <div class="clear"></div>
 <script type="text/javascript" src="theme/js/neighborly.js"></script>
 </body>
 </html>

@@ -23,6 +23,10 @@ ul.menu li{
   margin: 10px;
 }
 /* @group Page regions */
+body {
+  background: url(../images/page-background.png) repeat-y center top transparent;
+}
+
 .page {
 
 }
@@ -71,19 +75,37 @@ ul.menu li{
 }
 
 /* @group Page regions */
+.page-footer {
+
+}
+.footer-container {
+  background: url(../images/footer-background.png) repeat-y center transparent;
+
+}
+.footer-content {
+  position: absolute;
+  bottom: -202px;
+}
 .footer {
-  margin-bottom: 20px;
+  padding-top: 20px;
+  background: url(../images/footer.png) repeat-x 0 0 transparent;
+  padding-bottom: 40px;
 }
 .closure {
-  margin-bottom: 20px;
+  padding-top: 20px;
+  background: url(../images/footer.png) repeat-x 0 0 transparent;
+  padding-bottom: 40px;
 }
 /* @group tiles */
 .tiles img{
 }
 .tiles-top,
-tiles-bottom {
+.tiles-bottom {
   height: 95px; 
   overflow: hidden;
+}
+.tiles-bottom {
+
 }
 /* @accessibility */
 .skiplinks {
