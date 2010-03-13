@@ -4,11 +4,9 @@
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <meta content="en-us" http-equiv="Content-Language" />
 <meta content="Neighborly connects you with your closest neighbors." name="description" />
-<title>
 <!-- SITENAME START -->
-Be neighborly anytime online.
+<title>Be neighborly anytime online.</title>
 <!-- SITENAME END -->
-</title>
 <link rel="stylesheet" media="print" href="theme/css/print.css" />
 <link rel="stylesheet" media="all" href="theme/css/reset.css" />
 <link rel="stylesheet" media="all" href="theme/css/text.css" />
@@ -27,7 +25,7 @@ Be neighborly anytime online.
 </head>
 <body>
   <div class="skiplinks">
-  <strong><!-- SITENAME START --> Be neighborly anytime online <!-- SITENAME END --></strong>
+  <strong><!-- SITENAME START -->Be neighborly anytime online.<!-- SITENAME END --></strong>
   Skip directly to:
   <a href="#primary-nav">Section Navigation</a>,
   <a href="#page-main">Content</a>.
@@ -44,12 +42,12 @@ Be neighborly anytime online.
         <div id="page-header" class="page-header grid_20">
           <div id="branding" class="grid_3 branding alpha">
             <div class="content">
-              <!-- LOGO START --> <!-- <img src="theme/images/logo.png" alt="Neighborly Logo" /> --><!-- LOGO END -->
+              <!-- LOGO START --><!-- <img src="theme/images/logo.png" alt="Neighborly Logo" /> --><!-- LOGO END -->
             </div>
           </div>
           <div id="title" class="grid_5 title">
             <div class="content">
-              <h1><a href="index.html"><!-- SITENAME START --> Be neighborly anytime online <!-- SITENAME END --></a></h1>
+              <h1><a href="index.html"><!-- SITENAME START -->Be neighborly anytime online.<!-- SITENAME END --></a></h1>
             </div>
           </div>
           <div id="primary-nav" class="grid_10 primary-nav omega">
@@ -71,10 +69,12 @@ Be neighborly anytime online.
         <div id="main-content" class="grid_13 main-content push_3">
           <div class="content">
           <!--   HOME MAIN CONTENT START -->
-            <div id="register-address" class="form-container">
-              <form id="address">
-                <label>Enter your address</label>
-                <input value="" />
+            <div id="register" class="form-container">
+              <form id="register-address" action="map" method="post" accept-charset="UTF-8">
+                <div class="field-item">
+                  <label for="field-address">Enter your address</label>
+                  <input id="field-address" type="text" value="" name="register[field_address]" maxlength="255" />
+                </div>
                 <div class="description">
                   to see your neighborly neighbors
                 </div>
