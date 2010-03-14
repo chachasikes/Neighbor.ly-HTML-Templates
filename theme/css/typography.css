@@ -29,6 +29,16 @@ h5{
 h6{
   font-size: 1em;
 }
+
+.page-internal h1{
+  font-size: 1.5em;
+  line-height: 1.1em;
+}
+.page-internal h2{
+  font-size: 1.2em;
+}
+
+
 body, p, .content {
 
 }
@@ -54,7 +64,6 @@ div.form-container .description{
   font-size: 1.2em;
 }
 div.form-container .field-submit input {
-color: #68645E;
 font-size: 1.2em;
 }
 div.form-container .field-item input {

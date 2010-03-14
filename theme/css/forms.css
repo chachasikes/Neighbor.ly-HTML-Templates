@@ -1,5 +1,5 @@
 /* Based on this: http://nidahas.com/sandbox/form_template.html */
-div.form-container { padding-top: 20px; margin-bottom: 20px; }
+div.form-container {margin-bottom: 20px; }
 
 p.legend { margin-bottom: 1em; }
 p.legend em { color: #C00; font-style: normal; }
@@ -40,10 +40,11 @@ div.form-container .description {
 div.form-container .field-submit input {
   padding: 10px;
   margin: 10px 10px 10px 0;
-  background-color: #F2B56D;
+  background-color: #95C486;
+  color: #000033;
   float: right;
 }
 div.form-container .field-submit input:hover {
-  background-color: #F9901C;
+  background-color: #7FDB5D;
   color: #ffffff;
 }

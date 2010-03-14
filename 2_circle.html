@@ -37,7 +37,7 @@
   <a href="#primary-nav">Section Navigation</a>,
   <a href="#page-main">Content</a>.
   </div>
-  <div id="page" class="container_20 page">
+  <div id="page" class="container_20 page page-internal">
     <div id="page-content" class="page-content">
       <div id="page-top" class="page-top">
         <div id="messages" class="grid_20 messages">
@@ -47,7 +47,7 @@
         </div>
       	<div class="clear"></div>
         <div id="page-header" class="page-header grid_20">
-          <div id="branding" class="grid_3 branding alpha">
+          <div id="branding" class="grid_1 branding alpha">
             <div class="content">
               <!-- LOGO START --><!-- <img src="theme/images/logo.png" alt="Neighborly Logo" /> --><!-- LOGO END -->
             </div>
@@ -57,7 +57,7 @@
               <h1><a href="index.html"><!-- SITENAME START -->Be neighborly anytime online.<!-- SITENAME END --></a></h1>
             </div>
           </div>
-          <div id="primary-nav" class="grid_10 primary-nav omega">
+          <div id="primary-nav" class="grid_13 primary-nav omega">
             <div class="content">
             <!--   PRIMARY NAV START -->
               <ul class="menu">
@@ -73,25 +73,55 @@
     	</div>
       <div class="clear"></div>
       <div id="page-main" class="page-main">
-        <div id="main-content" class="grid_13 main-content push_3">
+        <div id="main-content" class="grid_18 main-content push_1">
           <div class="content">
           <!--   HOME MAIN CONTENT START -->
-            <div id="register" class="form-container grid_10">
-              <form id="register-address" action="2_circle.html" method="get" accept-charset="UTF-8">
-                <div class="description">
-                  Enter your address to see your neighborly neighbors
+            <div id="local-circle" class="local-circle grid_8 alpha">
+              <div id="map-display" class="">
+                Here's the people on Neighborly near you.
+              </div>
+              <!--   EMBED CIRCLE DISPLAY MAP START -->
+
+                  <iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/?ie=UTF8&amp;hq=&amp;hnear=3350+38th+Ave+S,+Minneapolis,+Hennepin,+Minnesota+55406&amp;t=h&amp;ll=44.942324,-93.217857&amp;spn=0.004556,0.006437&amp;z=16&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/?ie=UTF8&amp;hq=&amp;hnear=3350+38th+Ave+S,+Minneapolis,+Hennepin,+Minnesota+55406&amp;t=h&amp;ll=44.942324,-93.217857&amp;spn=0.004556,0.006437&amp;z=16&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+
+              <!--   EMBED CIRCLE DISPLAY MAP END -->
+              <div id="map-description" class="">
+                <p>The larger the circle, the  more you will know is going on.</p>
+                <p>As more people join, your {50} neighbor circle will dynamically tighten distance wise. Eventually it will be just down the street.</p>
+                <p>Change now or later.</p>
+              </div>
+            </div>
+            <div id="register" class="form-container grid_10 omega">
+              <form id="register-circle" action="3_signup.html" method="get" accept-charset="UTF-8">
+                <div id="input-address" class="">
+                  <div class='address'>33XX 30th Ave S</div>
+                  <div class='zipcode'>55407</div>
                 </div>
                 <div class="field-item">
-                  <label for="field-address">Street Address</label>
-                  <input id="field-address" type="text" value="" name="register[address]" maxlength="255" size="20" />
+                  <label for="circle-medium"> Who do you want to talk to?</label>
+                  <input id="circle-small" name="field-circle-size" type="radio" value="small" /> Small
+                  <input id="circle-medium" name="field-circle-size" type="radio" value="medium" checked="checked" /> Medium
+                  <input id="circle-large" name="field-circle-size" type="radio" value="large" /> Large
                 </div>
-                <div class="field-item">
-                  <label for="field-zipcode">Zipcode</label>
-                  <input id="field-zipcode" type="text" value="" name="register[zipcode]" maxlength="255"  size="10" />
+                <div id="circle-selection-feedback">
+                  <div class="field-item">
+                  <label for="field-circle-people">People</label>
+                  <input id="field-circle-people" type="text" value="50" />
+                  </div>
+                  <div class="field-item">
+                    <label for="field-circle-distance">Distance</label>
+                    <input id="field-circle-distance" type="text" value="300 yards" />
+                  </div>
                 </div>
-                 <div class="field-submit">
+                <div class="field-submit">
                   <input id="register-submit" type="submit" value="Submit" name="register[submit]" />
-                </div>               
+                </div>        
+                <div class="description">
+                  <p>View people in your circle</p>
+                  <p>After you register you, will be able to see the profile information shared by your neighbors.</p>
+                  <p>Register.</p>
+                </div>
+      
               </form>
             </div>
           <!--   HOME MAIN CONTENT END -->
