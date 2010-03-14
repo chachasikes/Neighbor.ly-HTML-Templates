@@ -22,6 +22,9 @@ ul.menu li{
   float: left;
   margin: 10px;
 }
+#primary-nav ul.menu li a.active{
+  color: #6666CC;
+}
 /* @group Page regions */
 body {
   background: url(../images/page-background.png) no-repeat center top transparent;

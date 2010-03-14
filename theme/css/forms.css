@@ -48,3 +48,9 @@ div.form-container .field-submit input:hover {
   background-color: #7FDB5D;
   color: #ffffff;
 }
+
+div.form-container .feedback input {
+  border: none;
+  background: none;
+  font-size: inherit;
+}

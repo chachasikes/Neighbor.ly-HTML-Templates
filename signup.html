@@ -63,7 +63,7 @@
               <ul class="menu">
                 <li><a href="learn.html">learn</a></li>
                 <li><a href="about.html">about</a></li>
-                <li><a href="signup.html">signup</a></li>
+                <li><a href="signup.html" class="active">signup</a></li>
                 <li><a href="login.html">login</a></li>
               </ul>
             <!--   PRIMARY NAV END -->
@@ -76,27 +76,80 @@
         <div id="main-content" class="grid_18 main-content push_1">
           <div class="content">
           <!--   HOME MAIN CONTENT START -->
-            <div id="local-circle" class="local-circle grid_8 alpha">
-              <div id="map-display" class="">
-                Here's the people on Neighborly near you.
-              </div>
-              <!--   EMBED CIRCLE DISPLAY MAP START -->
-
-                  <iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/?ie=UTF8&amp;hq=&amp;hnear=3350+38th+Ave+S,+Minneapolis,+Hennepin,+Minnesota+55406&amp;t=h&amp;ll=44.942324,-93.217857&amp;spn=0.004556,0.006437&amp;z=16&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/?ie=UTF8&amp;hq=&amp;hnear=3350+38th+Ave+S,+Minneapolis,+Hennepin,+Minnesota+55406&amp;t=h&amp;ll=44.942324,-93.217857&amp;spn=0.004556,0.006437&amp;z=16&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small>
-
-              <!--   EMBED CIRCLE DISPLAY MAP END -->
-              <div id="map-description" class="">
-                <p>The larger the circle, the  more you will know is going on.</p>
-                <p>As more people join, your {50} neighbor circle will dynamically tighten distance wise. Eventually it will be just down the street.</p>
-                <p>Change now or later.</p>
-              </div>
-            </div>
-            <div id="register" class="form-container grid_10 omega">
-              <form id="register-circle" action="signup.html" method="get" accept-charset="UTF-8">
-                <div id="input-address" class="feedback">
-                  <div class='address'>33XX 30th Ave S</div>
-                  <div class='zipcode'>55407</div>
+            <div id="register" class="form-container grid_15 omega">
+              <form id="register-signup" action="login.html" method="get" accept-charset="UTF-8">
+                <div class="description">
+                  <p>Neighborly builds trust. Real neighbors have real names. </p>
+                  <p>Think reciprocity. Your full name and approximate location is shared with the people whose information you can also see. You can share more to be more neighborly.</p>
                 </div>
+                
+                <fieldset>
+                  <legend>Contact information</legend>
+  
+                  <div class="field-item">
+                    <label for="field-first-name">First Name</label>
+                    <input id="field-first-name" type="text" value="" name="register[first_name]" maxlength="255" size="20" />
+                  </div>
+  
+                  <div class="field-item">
+                    <label for="field-last-name">Last Name</label>
+                    <input id="field-last-name" type="text" value="" name="register[last_name]" maxlength="255" size="20" />
+                  </div>
+  
+                  <div class="field-item">
+                    <label for="field-address">Street Address</label>
+                    <input id="field-address" type="text" value="" name="register[address]" maxlength="255" size="20" />
+                  </div>
+  
+                  <div class="field-item">
+                    <label for="field-city">City</label>
+                    <input id="field-city" type="text" value="" name="register[city]" maxlength="255" size="20" />
+                  </div>
+  
+                  <div class="field-item">
+                    <label for="field-zipcode">Zipcode</label>
+                    <input id="field-zipcode" type="text" value="" name="register[zipcode]" maxlength="255"  size="10" />
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <legend>Contactability in Your Neighbor Circle (not listed beyond circle)</legend>
+                  <div class="field-item">
+                    <label for="field-display-email">Display E-mail on Profile</label>
+                    <input id="field-display-email" value="no" type="radio" name="register[display_email]" checked="checked" /> No
+                    <input value="yes" type="radio" name="register[display_email]" /> Yes
+                  </div>
+                  <div class="field-item">
+                    <label for="field-display-contact">Web Contact Form on Profile</label>
+                    <input id="field-display-contact" value="no" type="radio" name="register[display_contact]" checked="checked" /> No
+                    <input value="yes" type="radio" name="register[display_contact]" /> Yes
+                  </div>
+                  <div class="field-item">
+                    <label for="field-display-real-street">Display Actual Street Address on Profile</label>
+                    <input id="field-display-real-street" value="no" type="radio" name="register[display_real_street]" checked="checked" /> No
+                    <input value="yes" type="radio" name="register[display_real_street]" /> Yes
+                  </div>
+                </fieldset>
+
+
+                <fieldset>
+                  <legend>If you want to share further information within your circle, fill it out</legend>
+                  <div class="field-item">
+                    <label for="field-telephone">Telephone</label>
+                    <input id="field-telephone" type="text" value="" name="register[telephone]" maxlength="255"  size="15" />
+                  </div>
+  
+                  <div class="field-item">
+                    <label for="field-twitter">Twitter</label>
+                    <input id="field-twitter" type="text" value="" name="register[twitter]" maxlength="255"  size="20" />
+                  </div>
+  
+                  <div class="field-item">
+                    <label for="field-facebook">Facebook Profile Page</label>
+                    <input id="field-facebook" type="text" value="" name="register[facebook]" maxlength="255"  size="20" />
+                  </div>
+                </fieldset>
+
+
                 <div class="field-item feedback">
                   <label for="circle-medium"> Who do you want to talk to?</label>
                   <input id="circle-small" name="field-circle-size" type="radio" value="small" /> Small
@@ -116,13 +169,7 @@
                 <div class="field-submit">
                   <input id="register-submit" type="submit" value="Register" name="register[submit]" />
                 </div>        
-                <div class="clear"></div>
-                <div class="description">
-                  <p>View people in your circle</p>
-                  <p>After you register you, will be able to see the profile information shared by your neighbors.</p>
-                  <p>Register.</p>
-                </div>
-      
+                <div class="clear"></div>      
               </form>
             </div>
           <!--   HOME MAIN CONTENT END -->
