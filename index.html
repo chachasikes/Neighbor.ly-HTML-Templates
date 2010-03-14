@@ -69,15 +69,22 @@
         <div id="main-content" class="grid_13 main-content push_3">
           <div class="content">
           <!--   HOME MAIN CONTENT START -->
-            <div id="register" class="form-container">
-              <form id="register-address" action="map" method="post" accept-charset="UTF-8">
-                <div class="field-item">
-                  <label for="field-address">Enter your address</label>
-                  <input id="field-address" type="text" value="" name="register[field_address]" maxlength="255" />
-                </div>
+            <div id="register" class="form-container grid_10">
+              <form id="register-address" action="map" method="get" accept-charset="UTF-8">
                 <div class="description">
-                  to see your neighborly neighbors
+                  Enter your address to see your neighborly neighbors
                 </div>
+                <div class="field-item">
+                  <label for="field-address">Street Address</label>
+                  <input id="field-address" type="text" value="" name="register[address]" maxlength="255" size="20" />
+                </div>
+                <div class="field-item">
+                  <label for="field-zipcode">Zipcode</label>
+                  <input id="field-zipcode" type="text" value="" name="register[zipcode]" maxlength="255"  size="10" />
+                </div>
+                 <div class="field-submit">
+                  <input id="register-submit" type="submit" value="Submit" name="register[submit]" />
+                </div>               
               </form>
             </div>
           <!--   HOME MAIN CONTENT END -->
@@ -98,7 +105,7 @@
       <div id="footer-content" class="footer-content grid_20 alpha omega">
         <div class="clear"></div>
         <div id="footer" class="grid_20 footer">
-          <div class="content grid_18 push_1 alpha omega">
+          <div class="content grid_17 push_1 alpha omega">
             <!--  FOOTER LINKS START -->
             <ul class="menu">
               <li><a href="besafe">Be safe</a></li>
@@ -110,7 +117,7 @@
         </div>
       	<div class="clear"></div>
         <div id="closure" class="grid_20 closure">
-          <div class="content grid_18 push_1 alpha omega">
+          <div class="content grid_17 push_1 alpha omega">
             <!--  CLOSURE START -->
             &copy; 2010 e-democracy.org
             <!--  CLOSURE END -->

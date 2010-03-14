@@ -24,10 +24,16 @@ ul.menu li{
 }
 /* @group Page regions */
 body {
-  background: url(../images/page-background.png) repeat-y center top transparent;
+  background: url(../images/page-background.png) no-repeat center top transparent;
+/*   background: url(../images/page-background-alt.png) no-repeat center top transparent; */
+  min-height: 480px !important;
+}
+.page {
+  min-height: 480px !important;
 }
 
-.page {
+html {
+  background: url(../images/page-background-fill.png) repeat-y center top transparent;
 
 }
 /* @group Page Top */
@@ -73,28 +79,26 @@ body {
 #secondary-nav {
 
 }
-
 /* @group Page regions */
 .page-footer {
 
 }
 .footer-container {
-  background: url(../images/footer-background.png) repeat-y center transparent;
 
 }
 .footer-content {
-  position: absolute;
-  bottom: -80px;
+
 }
 .footer {
-  padding-top: 20px;
-  background: url(../images/footer.png) repeat-x 0 0 transparent;
-  padding-bottom: 40px;
+  border-top: 40px #D1D3D4 solid;
+  padding-top: 30px;
+/*   background: url(../images/footer.png) repeat-x 0 0 transparent; */
+  padding-bottom: 30px;
 }
 .closure {
-  padding-top: 20px;
-  background: url(../images/footer.png) repeat-x 0 0 transparent;
-  padding-bottom: 40px;
+  padding-top: 30px;
+/*   background: url(../images/footer.png) repeat-x 0 0 transparent; */
+  padding-bottom: 30px;
 }
 /* @accessibility */
 .skiplinks {

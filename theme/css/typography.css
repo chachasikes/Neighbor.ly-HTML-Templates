@@ -1,17 +1,18 @@
 body {
-  color: #000000;
+  color: #000033;
   font-size: 14px;
   line-height: 1.5em;
   font-family: sans-serif;
 }
 
 a {
-  color: #000000;
+  color: #000033;
   text-decoration: none;
   font-weight: bold;
 }
 h1{
   font-size: 2.0em;
+  line-height: 1.1em;
 }
 h2{
   font-size: 1.5em;
@@ -33,12 +34,29 @@ body, p, .content {
 }
 h1, h2, h3 {
   font-family: Georgia, serif;
+  color: #000033;
 }
-
+#primary-nav ul.menu {
+  font-size: 1.2em;
+}
 /* @group Custom Styles */
 .messages a {
   font-weight: normal;
   font-size: 0.8em;
   padding: 10px;
   float: right;
+}
+div.form-container {
+  font-size: 1.2em;
+  color: #68645E;
+}
+div.form-container .description{
+  font-size: 1.2em;
+}
+div.form-container .field-submit input {
+color: #68645E;
+font-size: 1.2em;
+}
+div.form-container .field-item input {
+font-size: 1.2em;
 }
