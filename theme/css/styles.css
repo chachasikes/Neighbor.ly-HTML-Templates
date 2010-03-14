@@ -27,7 +27,7 @@ ul.menu li{
 }
 /* @group Page regions */
 body {
-  background: url(../images/page-background.png) no-repeat center top transparent;
+  background: url(../images/page-background-alt.png) no-repeat center top transparent;
 /*   background: url(../images/page-background-alt.png) no-repeat center top transparent; */
   min-height: 480px !important;
 }

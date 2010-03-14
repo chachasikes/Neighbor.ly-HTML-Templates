@@ -25,6 +25,12 @@ Status: March 13 2010
 This is a simple design which I would like to adjust, so it is not final, but it is usable, valid, accessible and checked in firefox, safari and ie 6/7.
 If the page templates are all built out and hard to adjust after the fact, we can easily adjust the background images, fonts and make a big different just with CSS.
 
+Screenshots:
+Home: http://skitch.com/chachsikes/n35fg/be-neighborly-anytime-online
+Select Circle: http://skitch.com/chachsikes/n35fk/be-neighborly-anytime-online
+Register: http://skitch.com/chachsikes/n35fs/be-neighborly-anytime-online
+Login: http://skitch.com/chachsikes/n35f5/be-neighborly-anytime-online
+
 Next Steps:
 * finish alpha version of design
 * make the forms interactive & animated
